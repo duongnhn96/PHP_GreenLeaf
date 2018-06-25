@@ -1,0 +1,23 @@
+
+RewriteEngine on
+RewriteRule ^/$ index.php [L]
+RewriteRule ^Gioi-thieu.html/?$ index.php?act=gioithieu     [L]
+RewriteRule ^San-pham.html/?$ index.php?act=sp    [L]
+RewriteRule ^Lien-he.html/?$ index.php?act=lienhe    [L]
+RewriteRule ^Dang-nhap.html/?$ index.php?act=dn    [L]
+RewriteRule ^Thong-tin-tai-khoan.html/?$ index.php?act=info    [L]
+RewriteRule ^San-Pham.html/?$ index.php?act=sp    [L]
+RewriteRule ^Gio-hang.html/?$ index.php?act=listcart    [L]
+RewriteRule ^Dang-Xuat.html/?$ php/logout.php    [L]
+RewriteRule ^Dang-ky.html/?$ index.php?act=dk [L]
+RewriteRule ^Dat-hang.html/?$ index.php?act=checkout [L]
+RewriteRule ^Thong-tin-tai-khoan.html/?$ index.php?act=info [L]
+RewriteRule ^Doi-mat-khau.html/?$ index.php?act=changepass [L]
+RewriteRule ^Danh-sach-don-hang.html/?$ index.php?act=myorder [L]
+RewriteRule ^Chi-tiet-don-hang-(.*).html/?$ index.php?act=detailorder&iddh=$1 [QSA]
+RewriteRule ^Blog.html/?$ index.php?act=blog     [L]
+RewriteRule ^San-pham/(.*).html/?$ index.php?idsp=$1      [QSA]
+RewriteRule ^Blog/(.*).html/?$ index.php?idtin=$1     [QSA]
+RewriteRule ^San-pham/trang-(.*)/?$ index.php?act=sp&trang=$1    [QSA]
+DirectoryIndex    index.php
+Options -Indexes
